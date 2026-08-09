@@ -4,14 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Raisins Food Gallery</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <!-- css style sheet -->
     <link rel="stylesheet" href="style.css" />
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- javascript script -->
     <script src="index.js" defer></script>
   </head>
   <body>
     <nav>
       <!-- logo -->
       <div class="logo">
-        <img src="raisins logo.png" alt="" />
+        <img src="images/raisins logo.png" alt="" />
       </div>
 
       <!-- links -->
@@ -40,5 +45,33 @@
         <button id="menu-btn">Drinks</button>
       </div>
     </section>
+
+    <!-- main content -->
+    <main class="shadow-lg">
+      <div class="card-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-4">
+        <div class="card rounded-lg shadow-lg">
+          <img src="images/arabian.jpg" alt="food image" />
+        </div>
+
+        <div class="card bg-red-100 rounded-lg shadow-lg">
+          <img class="rounded h-[80%]" width="100%" src="images/arabian.jpg" alt="fried" />
+          <div class="card-body text-center mt-4">
+            <h2 class="card-title font-bold text-gray-600 sm:text-lg md:text-xl">Arabian Rice</h2>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="rounded" src="images/arabian.jpg" alt="jollof" />
+        </div>
+
+        <div class="card">
+          <img class="rounded" src="images/arabian.jpg" alt="chicken biryani" />
+        </div>
+
+        <div class="card">
+          <img class="rounded" src="images/arabian.jpg" alt="mandy" />
+        </div>
+      </div>
+    </main>
   </body>
 </html>
