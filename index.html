@@ -20,7 +20,7 @@
       </div>
 
       <!-- links -->
-      <ul>
+      <ul class="links hidden sm:flex md:flex lg:flex">
         <li><a href="#menu">Menu</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -31,12 +31,14 @@
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
 
+      <ion-icon id="btn" class="text-4xl flex sm:hidden md:hidden lg:hidden" name="menu-outline"></ion-icon>
+    </nav>
+    <div class="overlay hidden"></div>
     <!-- hero section -->
-    <section class="hero">
+    <section class="hero font-bold text-center text-gray-600 text-xl sm:text-2xl md:text-3xl lg:text-4xl">
       <div>
-        <h1 class="heading">Raisins Food Gallery</h1>
+        <h1 class="logo">Raisins Food Gallery</h1>
       </div>
       <div class="hero-btn">
         <button id="menu-btn">All</button>
@@ -49,29 +51,52 @@
     <!-- main content -->
     <main class="shadow-lg">
       <div class="card-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-4">
-        <div class="card rounded-lg shadow-lg">
-          <img src="images/arabian.jpg" alt="food image" />
-        </div>
-
-        <div class="card bg-red-100 rounded-lg shadow-lg">
-          <img class="rounded h-[80%]" width="100%" src="images/arabian.jpg" alt="fried" />
+        <!-- cards -->
+        <div class="card bg-gray-300 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+          <img class="rounded h-[80%]" width="100%" src="images/arabian.jpg" alt="food image" />
           <div class="card-body text-center mt-4">
             <h2 class="card-title font-bold text-gray-600 sm:text-lg md:text-xl">Arabian Rice</h2>
           </div>
         </div>
 
-        <div class="card">
-          <img class="rounded" src="images/arabian.jpg" alt="jollof" />
+        <div class="card bg-gray-300 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+          <img class="rounded h-[80%]" width="100%" src="images/arabian.jpg" alt="fried" />
+          <div class="card-body text-center mt-4">
+            <h2 class="card-title font-bold text-gray-600 sm:text-lg md:text-xl">Fried Rice</h2>
+          </div>
         </div>
 
-        <div class="card">
-          <img class="rounded" src="images/arabian.jpg" alt="chicken biryani" />
+        <div class="card bg-gray-300 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+          <img class="rounded h-[80%]" width="100%" src="images/arabian.jpg" alt="jollof" />
+          <div class="card-body text-center mt-4">
+            <h2 class="card-title font-bold text-gray-600 sm:text-lg md:text-xl">Jollof Rice</h2>
+          </div>
         </div>
 
-        <div class="card">
-          <img class="rounded" src="images/arabian.jpg" alt="mandy" />
+        <div class="card bg-gray-300 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+          <img class="rounded h-[80%]" width="100%" src="images/arabian.jpg" alt="chicken biryani" />
+          <div class="card-body text-center mt-4">
+            <h2 class="card-title font-bold text-gray-600 sm:text-lg md:text-xl">Chicken Biryani</h2>
+          </div>
+        </div>
+
+        <div class="card bg-gray-300 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+          <img class="rounded h-[80%]" width="100%" src="images/arabian.jpg" alt="chinese rice" />
+          <div class="card-body text-center mt-4">
+            <h2 class="card-title font-bold text-gray-600 sm:text-lg md:text-xl">Chinese rice</h2>
+          </div>
+        </div>
+
+        <div class="card bg-gray-300 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+          <img class="rounded h-[80%]" width="100%" src="images/arabian.jpg" alt="mandy" />
+          <div class="card-body text-center mt-4">
+            <h2 class="card-title font-bold text-gray-600 sm:text-lg md:text-xl">Mandy</h2>
+          </div>
         </div>
       </div>
     </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
