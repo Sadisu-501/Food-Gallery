@@ -23,9 +23,9 @@ nav {
     list-style: none;
   }
 
-  li a {
+  /* li a {
     text-decoration: none;
-  }
+  } */
   .logo img {
     width: 150px;
   }
@@ -94,6 +94,5 @@ nav {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 100;
-    /* display: none; */
   }
 }
