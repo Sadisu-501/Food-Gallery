@@ -23,9 +23,7 @@ nav {
     list-style: none;
   }
 
-  /* li a {
-    text-decoration: none;
-  } */
+
   .logo img {
     width: 150px;
   }
@@ -53,6 +51,10 @@ nav {
   transition: all 0.3s ease-in-out;
   border: none;
 }
+.card img{
+  object-fit: cover;
+}
+
 /* mobile */
 @media (max-width: 480px) {
   .links {
